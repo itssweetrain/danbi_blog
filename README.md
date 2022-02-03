@@ -1,4 +1,4 @@
-<h1>https://itssweetrain.netlify.app/</h1>
+<h2>https://itssweetrain.netlify.app/</h2>
 
 <h1 align="center">
     gatsby-starter-hoodie
