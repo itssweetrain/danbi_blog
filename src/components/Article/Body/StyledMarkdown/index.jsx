@@ -39,13 +39,13 @@ const StyledMarkdown = styled.div`
   & h5,
   & h6 {
     margin: 11.2px 0 4.8px 0;
-    font-weight: 700;
+    font-weight: 750;
   }
 
   & h2 {
     margin-top: 64px;
-    margin-bottom: 24px;
     font-size: 28px;
+    line-height: 1;
   }
 
   & h3 {
@@ -77,7 +77,7 @@ const StyledMarkdown = styled.div`
   }
 
   & blockquote {
-    padding: 18px 24px;
+    padding: 10px 20px;
     border-left: 4px solid ${props => props.theme.colors.blockQuoteBorder};
     background-color: ${props => props.theme.colors.blockQuoteBackground};
 
@@ -129,10 +129,12 @@ const StyledMarkdown = styled.div`
   & li > code.language-text,
   & table code.language-text {
     padding: 1.6px 4.8px;
-    font-size: 14.4px;
-    background-color: ${props => props.theme.colors.inlineCodeBackground};
+    font-size: 15.5px;
+    color: #432cc1;
+    background-color: #ecf0f2;
     font-weight: bold;
-    color: ${props => props.theme.colors.text};
+    font-family: Fira Code, Menlo, Monaco, Consolas, Andale Mono, Ubuntu Mono,
+      Courier New, monospace;
   }
 
   & tr:nth-child(even) code.language-text {
