@@ -197,6 +197,7 @@ const StyledMarkdown = styled.div`
   & hr {
     border: none;
     border-bottom: 1px solid ${props => props.theme.colors.border};
+    margin-bottom: 20px;
   }
 
   & a {
