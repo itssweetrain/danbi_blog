@@ -11,7 +11,7 @@ tags:
 series: "Task"
 ---
 
-<img src="./https://postfiles.pstatic.net/MjAyMjAyMDVfMjY0/MDAxNjQ0MDQ1NDk1MDU5.b14lT8AMptmuXz92J8Qmyyrm4zOxNfCiSE0KmyeKQkog.VvP2qfKeVgEvf61toZZyqrzw4bN4qmZJ33ccRqf1hqsg.PNG.rainmaker303/SE-ec56c1bd-b4f6-4aa7-a8d8-26f40fbac44e.png?type=w966"/>
+<img src="https://postfiles.pstatic.net/MjAyMjAyMDVfMjY0/MDAxNjQ0MDQ1NDk1MDU5.b14lT8AMptmuXz92J8Qmyyrm4zOxNfCiSE0KmyeKQkog.VvP2qfKeVgEvf61toZZyqrzw4bN4qmZJ33ccRqf1hqsg.PNG.rainmaker303/SE-ec56c1bd-b4f6-4aa7-a8d8-26f40fbac44e.png?type=w966"/>
 
 > 앱을 처음 실행했을 때 마주하는 화면부터 `Activity`를 이해하고, 안드로이드의 물리 키에 따라 액티비티들이 어떤 순서로 작동하는지에 대해 알고자 정리하는 글 (feat.`백 버튼`, `홈 키`, `최근 앱 키`)
 
@@ -27,7 +27,7 @@ series: "Task"
 
 ---
 
-> **_A task is a stack of activities_**
+> A task is a stack of activities
 
 이렇게 실행된 액티비티들은 `Task`라는 곳에 존재하게 된다. </br>
 
@@ -70,7 +70,7 @@ series: "Task"
 
 ---
 
-> **_Now, if instead of hitting the Back button, you were to hit the Home button, the whole task is put in the background._**
+> Now, if instead of hitting the Back button, you were to hit the Home button, the whole task is put in the background.
 
 </br>
 
@@ -102,7 +102,7 @@ series: "Task"
 
 ---
 
-> **_if you're calling start activity with the activity you're already on._**
+> if you're calling start activity with the activity you're already on.
 
 모바일 디바이스 특성상 제한된 메모리를 효율적으로 사용하는 것이 관건일 때가 있다. 한 스크롤이 끝나는 기점으로 뷰를 재사용하는 `recyclerView`와 같은 안드로이드 컨텍스트처럼 액티비티또한 재사용할 수 있다. </br>
 
