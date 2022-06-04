@@ -7,11 +7,13 @@ tags:
   - CS
   - Programming Paradigm
   - Reactive Programming
-  - Rx
+  - RxJava
 series: "Programming"
 ---
 
 <img src="https://koenig-media.raywenderlich.com/uploads/2019/05/AndroidReactive-feature.png"/>
+<div style="text-align:center">
+Rx..너는 안드펫 ♡</div>
 
 ## 0. 왜 Reactive?
 

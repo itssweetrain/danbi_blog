@@ -14,7 +14,7 @@ module.exports = {
       resolve: `gatsby-plugin-gtag`,
       options: {
         trackingId: `G-N39BJ1LWMJ`,
-        head: false
+        head: false,
       },
     },
     `gatsby-plugin-catch-links`,

@@ -18,9 +18,12 @@ const StyledMarkdown = styled.div`
   & table,
   & blockquote,
   & pre,
-  & img,
   & .katex-display {
     margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  & img {
     margin-bottom: 24px;
   }
 
@@ -50,13 +53,11 @@ const StyledMarkdown = styled.div`
 
   & h3 {
     margin-top: 48px;
-    margin-bottom: 24px;
-    font-size: 22.4px;
+    font-size: 25px;
   }
 
   & h4 {
     margin-top: 32px;
-    margin-bottom: 24px;
     font-size: 17.6px;
   }
 
@@ -77,7 +78,7 @@ const StyledMarkdown = styled.div`
   }
 
   & blockquote {
-    padding: 10px 20px;
+    padding: 1px 20px;
     border-left: 4px solid ${props => props.theme.colors.blockQuoteBorder};
     background-color: ${props => props.theme.colors.blockQuoteBackground};
 
