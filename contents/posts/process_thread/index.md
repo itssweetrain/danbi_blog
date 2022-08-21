@@ -1,7 +1,7 @@
 ---
 title: "안드로이드의 Process와 Thread"
 description: "Process, Thread"
-date: 2022-06-01
+date: 2022-06-03
 update: 2022-06-03
 tags:
   - Android

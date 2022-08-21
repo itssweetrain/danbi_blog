@@ -27,7 +27,29 @@ series: "Programming"
 서브웨이의 경우 내가 사실상 `어떻게` 샌드위치를 주문하여 얻을지에 대해 관심이 있다. 죠샌드위치의 경우 `무엇을` 얻을지에 대해 더욱 관심이 있다. 서브웨이의 경우 내가 원하는 것을 one by one으로 `명령` 하며 주문해야 하지만, 죠샌드위치의 경우 내가 원하는 것 한개만 `선언`하면 주문이 끝난다. 제일 먼저 느낄 수 있는 둘의 차이는 주문하는 속도일 것이다. 샌드위치를 파는 입장에서는 재료를 하나 하나씩 주문을 받고 커스텀하여 샌드위치를 제조하는 것보단 이미 결정된 제조법만 따라서 결과값만 내보이는 방식이 훨씬 효율적일 것이다.
 하지만 두 경우 모두 맛있는 샌드위치라는 똑같은 결과값을 같다. 단지 그 방식의 차이가 있을 뿐이다. 프로그래밍도 같은 원리를 가지며 다음 코드를 보자.
 
-<iframe src="https://pl.kotl.in/z3At5JeV7?theme=darcula" width="100%" height="400"></iframe>
+```jsx
+fun main() {
+   var sumOfEvens = 0;
+
+      //Imperative
+        for (i in 0..100) {
+            if (i % 2 == 0) {
+                sumOfEvens = sumOfEvens + i
+            }
+        }
+        println(sumOfEvens)
+
+
+     //Declarative or Functional
+      sumOfEvens = IntStream.rangeClosed(0, 100)
+            .filter { i: Int -> i % 2 == 0 }
+            .reduce { x: Int, y: Int -> x + y }
+            .asInt
+      println(sumOfEvens)
+}
+```
+
+<br>
 
 > **data inconsistency in multi-core processing environments.**
 

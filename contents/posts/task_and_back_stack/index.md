@@ -45,8 +45,6 @@ series: "Task"
 
 앱 실행 후, 순서대로 실행된 액티비티 인스턴스들은 백 스택에 아래의 그림처럼 저장된다.
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbzpgA5%2FbtrsaSIOecT%2FjAx8m8TkoL7mSPzJ5ii1Wk%2Fimg.png"/>
-
 처음 실행된 Activity1은 foreground에 나올 것이고, 차례 대로 Activity2, Activity3을 실행한다면 차례대로 백 스택에 `push`된다. 맨 위에 쌓여있는 액티비티 인스턴스를 `top`이라고 표현하고, 현재의 top은 마지막에 실행한 Activity3이 되는 것이다. Activity3은 현재 포커스를 갖고있고 사용자와 상호작용하고 있는 액티비임을 알 수 있다.
 
 그렇다면 쌓여있는 액티비티들은 무얼하고 있을까? </br>

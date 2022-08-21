@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
 
   :not(pre) > code[class*="language-"], pre[class*="language-"] {
 	  color: #fff;
-    background: #220B33;
+    // background: #220B33;
   }
 `
 

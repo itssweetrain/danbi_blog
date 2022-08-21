@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const StyledMarkdown = styled.div`
   & {
-    font-size: 17.6px;
+    font-size: 16.5px;
     color: ${props => props.theme.colors.text};
     line-height: 1.7;
     overflow: hidden;
@@ -24,7 +24,7 @@ const StyledMarkdown = styled.div`
   }
 
   & img {
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
   }
 
   & p {
@@ -189,10 +189,10 @@ const StyledMarkdown = styled.div`
   }
 
   & img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
+    // display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    // max-width: 100%;
   }
 
   & hr {

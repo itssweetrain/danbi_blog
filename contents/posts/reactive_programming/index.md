@@ -1,7 +1,7 @@
 ---
 title: "Reactive Programming"
 description: "Rxjava"
-date: 2022-05-29
+date: 2022-05-13
 update: 2022-05-29
 tags:
   - CS
@@ -72,7 +72,11 @@ observer가 observable을 구독하는 시점에 observable은 observer와 함�
 
 ---
 
-<iframe src="https://pl.kotl.in/3zzGgWxmd?theme=darcula" width="100%" height="100"></iframe>
+```jsx
+interface Observable<T> {
+    fun subscribe(observer: Observer<T>)
+}
+```
 
 observable interface는 subscribe 메소드를 가지고, 이 메소드는 observer가 observable에 subscribe 할 수 있도록 invoke하는 역할을 한다. 그리고 observable에 subscribe을 한 후에는 observer는 observable에게 세 개 타입의 이벤트들을 전달한다.
 
@@ -84,7 +88,15 @@ observable interface는 subscribe 메소드를 가지고, 이 메소드는 obser
 
 observable이 observer로 데이터를 방출하기 전에, 우리는 필요에 맞게 데이터를 가공하여 보내줘야하는 경우도 있을 것이다. (예를 들어 `merge`,`modify`,`reduce`,`filter`...라든지) 그리고 새로운 값으로 탄생한 observable로 반환할 것이다. 이처럼 데이터를 변환하는 메서드를 Rx에서는 `operators` 라고 하고 이 함수들에 의해 upstream의 observable에서 연산자를 연결해나감으로써 최종목적지인 downstream의 observable로 반환한다.
 
-<iframe src="https://pl.kotl.in/lHuMKEkTR?theme=darcula" width="100%" height="100%"></iframe>
+```jsx
+fun main(
+	val result = Observable.just(1,2,3,4,5,6,7,8,9,10)
+                    .filter(it -> it%2 == 0)
+                    .map(it -> it*100)
+
+   result.subscribe(it -> println(it))
+)
+```
 
 함수형 프로그래밍의 장점을 접목했기에 메서드 대부분이 함수형 인터페이스를 인자로 받는다. 그래서 이 함수형 인터페이스의 구현은 함수형 프로그래밍의 원칙에 따라 같은 입력값을 받으면 같은 결과를 반환하고 외부 환경에 의해 변화가 일어나지 않아야한다. 때문에 부수효과가 발생하는 처리는 메서드 체이닝 도중이 아니라 최종적으로 데이터를 받아 처리하는 subscriber쪽에서 이루어지는 것이 좋다.
 
