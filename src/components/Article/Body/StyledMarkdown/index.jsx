@@ -24,7 +24,7 @@ const StyledMarkdown = styled.div`
   }
 
   & img {
-    // margin-bottom: 24px;
+    margin-bottom: 24px;
   }
 
   & p {
@@ -189,10 +189,10 @@ const StyledMarkdown = styled.div`
   }
 
   & img {
-    // display: block;
-    // margin-left: auto;
-    // margin-right: auto;
-    // max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
   }
 
   & hr {
