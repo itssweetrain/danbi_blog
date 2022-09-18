@@ -1,5 +1,5 @@
 ---
-title: "Declarative Programming"
+title: "선언형 프로그래밍에 대해 알아보자 (feat.반응형, 함수형)"
 description: "선언형 프로그래밍에 대해 알아보자(feat.반응형, 함수형)"
 date: 2022-04-03
 update: 2022-04-03

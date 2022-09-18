@@ -11,8 +11,6 @@ tags:
 series: "Task"
 ---
 
-<img src="https://postfiles.pstatic.net/MjAyMjAyMDVfMjY0/MDAxNjQ0MDQ1NDk1MDU5.b14lT8AMptmuXz92J8Qmyyrm4zOxNfCiSE0KmyeKQkog.VvP2qfKeVgEvf61toZZyqrzw4bN4qmZJ33ccRqf1hqsg.PNG.rainmaker303/SE-ec56c1bd-b4f6-4aa7-a8d8-26f40fbac44e.png?type=w966"/>
-
 > 앱을 처음 실행했을 때 마주하는 화면부터 `Activity`를 이해하고, 안드로이드의 물리 키에 따라 액티비티들이 어떤 순서로 작동하는지에 대해 알고자 정리하는 글 (feat.`백 버튼`, `홈 키`, `최근 앱 키`)
 
 ## When launching App..
